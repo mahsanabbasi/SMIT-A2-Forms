@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 120px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.reg-img { background-color: #7cc6fe; }
+.login-img { background-color: #ffb997; }
+
+.back-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #3fc689;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  max-width: 700px;   
+  margin: 0 auto;     
+  padding: 20px;
+}
+
+.logo-box {
+  text-align: center;   
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.form-row > label {
+  width: 180px;      
+  flex-shrink: 0;       
+  padding-top: 5px;
+  font-weight: normal;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"],
+.form-row textarea,
+.form-row select {
+  padding: 5px 8px;
+  border: 1px solid #999;
+  font-family: inherit;
+}
+
+.hint {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.inline-label {
+  display: inline;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 5px 0 12px;
+}
+
+.others-box {
+  margin-left: 12px;   
+  display: inline-flex;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 6px;
+  text-align: center;
+  font-size: 13px;
+}
+
+table input[type="text"] {
+  width: 90%;
+  padding: 4px;
+}
+
+.btn-row {
+  text-align: center;   
+  margin-top: 30px;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 6px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.login-wrapper {
+  max-width: 350px;
+}
+
+.submitted-wrapper {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+
+
+.form-login {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.form-row-login {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-row-login label {
+    width: 85px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.form-row-login input {
+    width: 177px;
+    height: 22px;
+    padding: 2px 4px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.signup-login-Card{
+  text-align: center;
+  margin: 35px;
+}
+.signup-login-Card a h2{
+  color: #551A8B
+}
+
+

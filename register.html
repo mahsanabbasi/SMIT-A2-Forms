@@ -1,0 +1,180 @@
+<!-- Name: YOUR NAME HERE -->
+<!-- Roll Number: YOUR ROLL NUMBER HERE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html" class="back-circle">&#8592;</a>
+
+<div class="form-wrapper">
+
+  <div class="logo-box">
+      <img src="./1675703363317.jfif" alt="SMIT Logo" class="logo">
+
+  </div>
+
+  <h2>STUDENT REGISTRATION FORM</h2>
+
+  <form action="Submitted.html">
+
+    <div class="form-row">
+      <label>FIRST NAME</label>
+       <input type="text" name="fname" placeholder="Enter the First Name" maxlength="30" pattern="[a-zA-Z]+" required>
+        <span class="hint">(max 30 characters a-z and A-Z)</span>
+
+    </div>
+
+    <div class="form-row">
+      <label>LAST NAME</label>
+        <input type="text" name="lname" placeholder="Enter the Last Name" maxlength="30" pattern="[a-zA-Z]+" required>
+        <span class="hint">(max 30 characters a-z and A-Z)</span>
+    </div>
+
+    <div class="form-row">
+      <label>DATE OF BIRTH</label>
+        <input type="date" name="dob" required>
+    </div>
+
+    <div class="form-row">
+      <label>EMAIL ID</label>
+        <input type="email" name="email" placeholder="Enter the Email Address" required>
+    </div>
+
+    <div class="form-row">
+      <label>MOBILE NUMBER</label>
+        <input type="tel" name="mobile" placeholder="Enter the Mobile Number" maxlength="10" pattern="[0-9]{10}" required>
+        <span class="hint">(10 Digits Numbers)</span>
+    </div>
+
+    <div class="form-row">
+      <label>GENDER</label>
+        Male <input type="radio" name="gender" value="male">
+        Female <input type="radio" name="gender" value="female">
+    </div>
+
+    <div class="form-row">
+      <label>ADDRESS</label>
+        <textarea name="address" rows="3"></textarea>
+    </div>
+
+    <div class="form-row">
+      <label>CITY</label>
+        <input type="text" name="city" placeholder="Enter the City Name" maxlength="30" pattern="[a-zA-Z]+">
+        <span class="hint">(max 30 characters a-z and A-Z)</span>
+    </div>
+
+    <div class="form-row">
+      <label>PIN CODE</label>
+        <input type="text" name="pincode" placeholder="Enter the Pin Code" maxlength="6" pattern="[0-9]{6}">
+        <span class="hint">(6 Digits Numbers)</span>
+    </div>
+
+    <div class="form-row">
+      <label>STATE</label>
+        <input type="text" name="state" placeholder="Enter the State" maxlength="30" pattern="[a-zA-Z]+">
+        <span class="hint">(max 30 characters a-z and A-Z)</span>
+    </div>
+
+    <div class="form-row">
+      <label>COUNTRY</label>
+        <input type="text" name="country" placeholder="Enter the Country Name">
+    </div>
+
+    <div class="form-row">
+      <label>HOBBIES</label>
+        Drawing <input type="checkbox" name="hobbies" value="drawing">
+        Singing <input type="checkbox" name="hobbies" value="singing">
+        Dancing <input type="checkbox" name="hobbies" value="dancing">
+        Sketching <input type="checkbox" name="hobbies" value="sketching">
+        <br>
+        <div class="others-box">
+          Others <input type="checkbox" name="hobbies" value="others" id="othersChk">
+        <input type="text" name="othersText" class="others-text">
+
+        </div>
+        
+    </div>
+
+    <div class="form-row">
+      <label>QUALIFICATION</label>
+        <table>
+          <thead>
+            <tr>
+              <th>SI.No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" name="board1"></td>
+              <td><input type="text" name="perc1" maxlength="10"></td>
+              <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" name="board2"></td>
+              <td><input type="text" name="perc2" maxlength="10"></td>
+              <td><input type="text" name="year2"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" name="board3"></td>
+              <td><input type="text" name="perc3" maxlength="10"></td>
+              <td><input type="text" name="year3"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" name="board4"></td>
+              <td><input type="text" name="perc4" maxlength="10"></td>
+              <td><input type="text" name="year4"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>(10 char max)</td>
+              <td>upto 2 decimal</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+    <div class="form-row">
+      <label>COURSES<br>APPLIED FOR</label>
+        <select name="course">
+          <option value="">Select any course</option>
+          <option value="bca">BCA</option>
+          <option value="ba">B.A</option>
+          <option value="bsc">B.Sc</option>
+          <option value="bcom">B.Com</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+      <label>Upload you pic<br><span class="hint">(only .png,.jpg,.jpeg formats allow)</span></label>
+        <input type="file" name="pic" accept=".png,.jpg,.jpeg">
+    </div>
+
+    <div class="btn-row">
+      <button type="submit" class="submit-btn" >Submit</button>
+      <button type="reset" class="reset-btn" >Reset</button>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
